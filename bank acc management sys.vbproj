@@ -1,0 +1,462 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5B5EB7A7-9F8F-42F7-9228-1F7B82E28512}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Finance_Management_System.My.MyApplication</StartupObject>
+    <RootNamespace>Finance_Management_System</RootNamespace>
+    <AssemblyName>Finance Management System</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Finance Management System.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Finance Management System.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="about.Designer.vb">
+      <DependentUpon>about.vb</DependentUpon>
+    </Compile>
+    <Compile Include="about.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="accountdetails.Designer.vb">
+      <DependentUpon>accountdetails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="accountdetails.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="accountstatement.Designer.vb">
+      <DependentUpon>accountstatement.vb</DependentUpon>
+    </Compile>
+    <Compile Include="accountstatement.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="createnewaccount.Designer.vb">
+      <DependentUpon>createnewaccount.vb</DependentUpon>
+    </Compile>
+    <Compile Include="createnewaccount.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CrystalReport2.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReport3.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport3.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReport4.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport4.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="databaselink.vb" />
+    <Compile Include="DataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet2.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="deposit.Designer.vb">
+      <DependentUpon>deposit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="deposit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forgotpassword.Designer.vb">
+      <DependentUpon>forgotpassword.vb</DependentUpon>
+    </Compile>
+    <Compile Include="forgotpassword.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.vb">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Help Engine.Designer.vb">
+      <DependentUpon>Help Engine.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Help Engine.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="loan.Designer.vb">
+      <DependentUpon>loan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="loan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="loandetails.Designer.vb">
+      <DependentUpon>loandetails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="loandetails.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="loanstatement.Designer.vb">
+      <DependentUpon>loanstatement.vb</DependentUpon>
+    </Compile>
+    <Compile Include="loanstatement.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="loanwithdraw.Designer.vb">
+      <DependentUpon>loanwithdraw.vb</DependentUpon>
+    </Compile>
+    <Compile Include="loanwithdraw.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.vb">
+      <DependentUpon>login.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="New User.Designer.vb">
+      <DependentUpon>New User.vb</DependentUpon>
+    </Compile>
+    <Compile Include="New User.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="payloan.Designer.vb">
+      <DependentUpon>payloan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="payloan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="usernamepasswordchange.Designer.vb">
+      <DependentUpon>usernamepasswordchange.vb</DependentUpon>
+    </Compile>
+    <Compile Include="usernamepasswordchange.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="welcome.Designer.vb">
+      <DependentUpon>welcome.vb</DependentUpon>
+    </Compile>
+    <Compile Include="welcome.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="withdrawmoney.Designer.vb">
+      <DependentUpon>withdrawmoney.vb</DependentUpon>
+    </Compile>
+    <Compile Include="withdrawmoney.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="about.resx">
+      <DependentUpon>about.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="accountdetails.resx">
+      <DependentUpon>accountdetails.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="accountstatement.resx">
+      <DependentUpon>accountstatement.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="createnewaccount.resx">
+      <DependentUpon>createnewaccount.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport2.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport3.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport3.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport4.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport4.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="deposit.resx">
+      <DependentUpon>deposit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forgotpassword.resx">
+      <DependentUpon>forgotpassword.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Help Engine.resx">
+      <DependentUpon>Help Engine.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loan.resx">
+      <DependentUpon>loan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loandetails.resx">
+      <DependentUpon>loandetails.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loanstatement.resx">
+      <DependentUpon>loanstatement.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loanwithdraw.resx">
+      <DependentUpon>loanwithdraw.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="New User.resx">
+      <DependentUpon>New User.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="payloan.resx">
+      <DependentUpon>payloan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usernamepasswordchange.resx">
+      <DependentUpon>usernamepasswordchange.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="welcome.resx">
+      <DependentUpon>welcome.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="withdrawmoney.resx">
+      <DependentUpon>withdrawmoney.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet2.xsc">
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet2.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet2.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSet2.xss">
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ws_Ultimate_Vista_1600x1200.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mac_Art_by_mj-coffeeholick.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\whitemagic.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icontexto-webdev-reload-048x048.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vista_Help_icon_by_Thoosje.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3d-spheres-1280-960-4624.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3d-spheres-1280-960-46241.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\015.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\w3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picture-935a40dba2-1680x1050.jpg" />
+    <None Include="Resources\of-me-and-you-of-me-and-you-blue-abstract-1920x1080.jpg" />
+    <None Include="Resources\Fire-gIrl-fire-girl-2560x1600.jpg" />
+    <None Include="Resources\Graphic-Design-Light-graphic-design-light-1680x10501.jpg" />
+    <None Include="Resources\Graphic-Design-Light-graphic-design-light-1680x1050.jpg" />
+    <None Include="Resources\w24.jpg" />
+    <None Include="Resources\w23.jpg" />
+    <None Include="Resources\w22.jpg" />
+    <None Include="Resources\creative-colorful-eye-creative-colorful-eye-1920x1080.jpg" />
+    <None Include="Resources\w21.jpg" />
+    <None Include="Resources\Stats-wallpaper_1024x768.jpg" />
+    <None Include="Resources\w2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1331114349_backup-restore.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\creative-colorful-eye-creative-colorful-eye-1920x10802.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\of-me-and-you-of-me-and-you-blue-abstract-1920x10801.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\final.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\final1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\final2.gif" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
